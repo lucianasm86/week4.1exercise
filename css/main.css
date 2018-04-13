@@ -1,8 +1,43 @@
-/* Your CSS styling goes here. For example:
-
-h1 {
-	color: pink;
-	font-size: 50px;
+body {
+    text-align: center;
 }
 
-*/
+.box {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.purple {
+    background-color: #621987;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.yellow {
+    background-color: #fcfc2d;
+}
+
+.lightblue {
+    background-color: #2aa1f7;
+}
+
+.container {
+    height: 200px;
+    width: 200px;
+    background-color: #f44253;
+}
+
+@media (max-width: 600px) {
+    .black, .yellow {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .purple, .black, .yellow, .lightblue {
+        width: 100%;
+    }
+}
